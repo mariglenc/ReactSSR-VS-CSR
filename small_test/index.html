@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>React Hydrate Example</title>
+  </head>
+  <body>
+    <div id="root">
+      <p>
+        Server-rendered content. Click count: <span id="clickCount">0</span>
+      </p>
+      <button id="incrementButton" onclick="handleClick()">Increment</button>
+    </div>
+    <script
+      defer
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script defer type="module" src="./client-side-code.js"></script>
+  </body>
+</html>
